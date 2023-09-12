@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf App</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+    </style>
+
+</head>
+<body>
+    <header class="header">
+        <h1>Bookshelf App</h1>
+        <p>Aplikasi rak buku</p>
+    </header>
+    <div class="sidebar">
+        <input type="text" id="searchInput" placeholder="Cari buku...">
+        <h3>Menu</h3>
+        <a href="#add-book"><i class="fas fa-book"></i>Tambah Buku</a>
+        <a href="#done"><i class="fas fa-bookmark"></i>Belum Dibaca</a>
+        <a href="#notyet"><i class="fas fa-book-open"></i>Selesai</a>
+    </div>
+    <div class="content">
+        <div class="add-book" id="add-book">
+            <h2>Tambah Buku</h2>
+            <form id="bookForm">
+                <div class="form-group">
+                    <label for="coverURL">URL Cover Buku</label>
+                    <input type="url" id="coverURL">
+                </div>
+                <div class="form-group">
+                    <label for="title">Judul</label>
+                    <input type="text" id="title" required>
+                </div>
+                <div class="form-group">
+                    <label for="author">Penulis</label>
+                    <input type="text" id="author" required>
+                </div>
+                <div class="form-group">
+                    <label for="year">Tahun</label>
+                    <input type="number" id="year" required>
+                </div>
+                <div class="form-group2">
+                    <label for="isComplete">Selesai dibaca:</label>
+                    <input type="checkbox" id="isComplete">
+                </div>
+                <button type="submit">Tambah Buku</button>
+            </form>
+        </div>
+    
+        <div class="not-yet" id="notyet">
+            <h2>Selesai dibaca</h2>
+            <table id="unfinishedBooksTable">
+                <thead>
+                    <tr>
+                        <th>Gambar</th>
+                        <th>Judul</th>
+                        <th>Penulis</th>
+                        <th>Tahun</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+            </ul>
+        </div>
+        <div class="done" id="done"> 
+            <h2>Belum selesai dibaca</h2>
+            <table id="finishedBooksTable">
+                <thead>
+                    <tr>
+                        <th>Gambar</th>
+                        <th>Judul</th>
+                        <th>Penulis</th>
+                        <th>Tahun</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div> 
+    </div>
+    <script src="script.js"></script>
+</body>
+<footer>
+    <p>BOOKSHELF &#169; 2023, Aulia Augusta </p>
+</footer>
+</html>

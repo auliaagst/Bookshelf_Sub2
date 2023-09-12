@@ -1,0 +1,268 @@
+* {
+    font-family: 'Nunito', sans-serif;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.header {
+    height:100px;
+    position: relative;
+    background-color: #fff;
+    width: 100%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    margin: 10px 0;
+    padding-left: 270px;
+    color: #1D5B79;
+}
+
+.header p {
+    margin: 10px 0;
+    color: #1D5B79;
+    padding-left: 270px;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 230px;
+    background-color: #1D5B79;
+    padding-top: 20px;
+}
+
+.sidebar h3 {
+    padding: 10px 20px;
+    color: #fff;
+}
+
+.sidebar a {
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+#searchInput {
+    margin: 10px 20px;
+    max-width: 75%;
+    height: 30px;
+    border-radius: 8px;
+    border-color: #7b979c;
+    border: 2px solid #7b979c;
+}
+
+.sidebar a .fas {
+    padding-right: 10px;
+}
+
+.sidebar a:hover {
+    background-color: #468B97;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    padding-left: 270px;
+}
+
+.add-book {
+    justify-content: center;
+    align-items: center;
+}
+
+.add-book h2{
+    color: #1D5B79;
+}
+
+.add-book form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    color: #7b979c;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 2.5px solid #7b979c;
+}
+
+.form-group2 {
+    font-weight: bold;
+    color: #7b979c;
+    margin-bottom: 20px;
+}
+
+#isComplete {
+    margin-top: 10px;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #1D5B79;;
+    color: #fff;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #468B97;
+}
+
+button {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+button.delete {
+    background-color: #ff6f6f;
+}
+
+button.edit {
+    background-color: #f1c40f;
+}
+
+button.complete {
+    background-color: #2ecc71;
+}
+
+
+.not-yet h2{
+    color: #1D5B79;
+}
+
+
+.done h2{
+    color: #1D5B79;
+}
+
+table img {
+    max-width: 80%;
+    height: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    border: 1px solid #ccc;
+}
+
+table td, table th {
+    width: 20%;
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    width: 20%;
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+    color: #1D5B79;
+}
+
+table td:last-child, table td:first-child{
+    text-align: center;
+}
+
+footer {
+    padding-left: 270px;
+    background-color: #7b979c;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 560px) {
+
+    .header {
+        padding-top: 100px;
+        padding-left: 10px;
+    }
+
+    .header h1 {
+        margin: 10px 0;
+        color: #1D5B79;
+    }
+    
+    .header p {
+        margin: 10px 0;
+        color: #1D5B79;
+    }
+
+    .sidebar {
+        position: fixed;
+        display: flex;
+        flex-direction: grid;
+        top: 0;
+        height: 50px;
+        width: 100%;
+        background-color: #1D5B79;
+        padding: 10px;
+    }
+
+    .sidebar h3 {
+        display: none;
+    }
+
+    .sidebar a {
+        padding: 10px;
+        font-size: 14px; 
+        margin: 10px;
+    }
+
+    .sidebar a .fas {
+        display: none;
+    }
+
+    #searchInput {
+        max-width: 20% 
+    }
+
+    .content {
+        max-width: 90%;
+        padding: 10px;
+    }
+
+    .add-book form {
+        max-width: 100%; 
+    }
+
+    footer {
+        background-color: #7b979c;
+        text-align: center;
+    }
+}
+
+
